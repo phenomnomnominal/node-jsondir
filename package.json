@@ -36,9 +36,6 @@
     "url": "http://danielimhoff.com"
   },
   "license": "MIT/X11",
-  "os": [
-    "!win32"
-  ],
   "engine": [
     "node >=0.2.0"
   ]
