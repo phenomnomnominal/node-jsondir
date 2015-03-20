@@ -450,7 +450,7 @@ File.prototype.chmod = function(callback) {
 File.prototype.chown = function(callback) {
   var self = this;
 
-  if ('owner' in this || 'group' in this) {
+  if (os.platform() !== 'win32' && ('owner' in this || 'group' in this)) {
     uidNumber('owner' in this ? this.owner : process.getuid(), 'group' in this ? this.group : process.getgid(), function(err, uid, gid) {
       if (err) callback(err);
       FS.chown(self.path, uid, gid, function(err) {

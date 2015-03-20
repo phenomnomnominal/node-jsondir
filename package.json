@@ -4,10 +4,10 @@
   "description": "Convert JSON to directories and back again.",
   "main": "./src/index.js",
   "dependencies": {
-    "graceful-fs": "3.0.6",
+    "graceful-fs": "~2.0.1",
     "mkdirp": "~0.3.5",
     "rimraf": "~2.2.2",
-    "uid-number": "0.0.6",
+    "uid-number": "0.0.3",
     "xtend": "~2.1.1"
   },
   "devDependencies": {
